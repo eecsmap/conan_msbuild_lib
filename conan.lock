@@ -1,0 +1,25 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "ref": "hello/1.0",
+    "options": "",
+    "build_requires": [
+     "1"
+    ],
+    "path": "conanfile.py",
+    "context": "host"
+   },
+   "1": {
+    "ref": "visual_studio_defaults/1.0.20@star/cpp#a00ade0920c889ed53531f7fc81bddd8",
+    "options": "rtti=False\nunicode=True",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "dece55a1ed3018df504b317e757dcaba",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": true
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=Visual Studio\ncompiler.cppstd=14\ncompiler.runtime=MD\ncompiler.toolset=v143\ncompiler.version=17\nos=Windows\nos.subsystem=None\nos_build=Windows\n[options]\n[build_requires]\n*: visual_studio_defaults/[>=1.0.0]@star/cpp\n[env]\n"
+}
