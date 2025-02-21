@@ -1,0 +1,51 @@
+C:\Users\wd732578\source\repos\conan_msbuild_lib>conan build .
+Conan 1 is on a deprecation path, please consider migrating to Conan 2
+Using lockfile: 'C:\Users\wd732578\source\repos\conan_msbuild_lib/conan.lock'
+Using cached profile from lockfile
+[HOOK - build_type_checker.py] pre_build(): Running build_type checker...
+conanfile.py (hello/1.0): Calling build()
+
+----Running------
+> "C:\Users\wd732578\source\repos\conan_msbuild_lib\conan\conanbuild.bat" && msbuild "hello.sln" /p:Configuration=Release /p:Platform=x64
+-----------------
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.12.4
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+MSBuild version 17.12.12+1cce77968 for .NET Framework
+Build started 2/20/2025 4:12:36 PM.
+
+Project "C:\Users\wd732578\source\repos\conan_msbuild_lib\hello.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|x64".
+Project "C:\Users\wd732578\source\repos\conan_msbuild_lib\hello.sln" (1) is building "C:\Users\wd732578\source\repos\co
+nan_msbuild_lib\hello.vcxproj" (2) on node 1 (default targets).
+InitializeBuildStatus:
+  Creating "hello\x64\Release\hello.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Touching "hello\x64\Release\hello.tlog\unsuccessfulbuild".
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\CL.exe /c /Iinclude
+   /Zi /nologo /W3 /WX- /diagnostics:column /sdl /MP16 /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /E
+  Hsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /permissive- /Fo"hello\x64\Release\\" /Fd"
+  C:\Users\wd732578\source\repos\conan_msbuild_lib\x64\Release\hello.pdb" /external:W3 /Gd /TP /FC /errorReport:queue
+  src/hello.cpp
+  hello.cpp
+Lib:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\Lib.exe /OUT:"C:\Us
+  ers\wd732578\source\repos\conan_msbuild_lib\x64\Release\hello.lib" /NOLOGO /MACHINE:X64 /LTCG hello\x64\Release\hello
+  .obj
+  hello.vcxproj -> C:\Users\wd732578\source\repos\conan_msbuild_lib\x64\Release\hello.lib
+FinalizeBuildStatus:
+  Deleting file "hello\x64\Release\hello.tlog\unsuccessfulbuild".
+  Touching "hello\x64\Release\hello.tlog\hello.lastbuildstate".
+Done Building Project "C:\Users\wd732578\source\repos\conan_msbuild_lib\hello.vcxproj" (default targets).
+
+Done Building Project "C:\Users\wd732578\source\repos\conan_msbuild_lib\hello.sln" (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.93

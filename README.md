@@ -10,4 +10,5 @@ Build:
 
 ```
 conan install .
+conan build .
 ```

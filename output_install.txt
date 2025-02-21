@@ -1,0 +1,42 @@
+C:\Users\wd732578\source\repos\conan_msbuild_lib>conan install .
+Conan 1 is on a deprecation path, please consider migrating to Conan 2
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=Visual Studio
+compiler.cppstd=14
+compiler.runtime=MD
+compiler.toolset=v143
+compiler.version=17
+os=Windows
+os.subsystem=None
+os_build=Windows
+[options]
+[build_requires]
+*: visual_studio_defaults/[>=1.0.0]@star/cpp
+[env]
+
+Version ranges solved
+    Version range '>=1.0.0' required by 'conanfile.py (hello/1.0)' resolved to 'visual_studio_defaults/1.0.20@star/cpp' in local cache
+
+conanfile.py (hello/1.0): Installing package
+Requirements
+Packages
+Build requirements
+    visual_studio_defaults/1.0.20@star/cpp from 'star-release' - Cache
+Build requirements packages
+    visual_studio_defaults/1.0.20@star/cpp:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+
+Installing (downloading, building) binaries...
+visual_studio_defaults/1.0.20@star/cpp: Already installed!
+conanfile.py (hello/1.0): Applying build-requirement: visual_studio_defaults/1.0.20@star/cpp
+conanfile.py (hello/1.0): Generator txt created conanbuildinfo.txt
+conanfile.py (hello/1.0): Calling generate()
+conanfile.py (hello/1.0): WARN: Using the new toolchains and generators without specifying a build profile (e.g: -pr:b=default) is discouraged and might cause failures and unexpected behavior
+conanfile.py (hello/1.0): MSBuildToolchain created conantoolchain_release_x64.props
+conanfile.py (hello/1.0): MSBuildToolchain writing conantoolchain.props
+conanfile.py (hello/1.0): Aggregating env generators
+conanfile.py (hello/1.0): Generated conaninfo.txt
+conanfile.py (hello/1.0): Generated graphinfo
